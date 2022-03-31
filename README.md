@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n/hub/fylo-data-indicator-challenge-SyE9QNXm9](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n/hub/fylo-data-indicator-challenge-SyE9QNXm9)
+- Live Site URL: [https://gregsgrog.github.io/fylo-data-storage-component-master/](https://gregsgrog.github.io/fylo-data-storage-component-master/)
 
 ## My process
 I started by building planning out my project in figma. I then added my HTML tags, before linking my css file, adding the google font and adding my css.
