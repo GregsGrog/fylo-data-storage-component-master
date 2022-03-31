@@ -3,6 +3,7 @@
 body{
     background-color: #0C122C;
     font-family: 'Raleway', sans-serif;
+    margin:0px;
    
 }
 
@@ -62,30 +63,41 @@ body{
    margin-bottom: 8px;
    width: 100%;
    height: 20px;
+   border-radius: 20px;
+   background-color: #151E49;
+   padding: 3px;
+   border-color: #151E49;
 }
+
+
 
 .progress-bar::-webkit-progress-bar {
     background-color: #151E49;
     border-radius: 10px;
+
+}
+
+.progress-bar::-moz-progress-bar{
+    background-color: #151E49;
+    border-radius: 11px;
     padding: 3px;
 }
 
 .progress-bar::-webkit-progress-value {
     background: linear-gradient(90deg, #FDA198 0%, #CA4C91 100%);
-    border-radius: 10px;
+    border-radius: 11px;
     padding:2px;
 }
 
-.progress-bar::-webkit-progress-value::after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    border-radius: 100%;
-    right: 7px;
-    top: 7px;
-    background-color: white;
+.progress-bar::-moz-progress-bar {
+    background: linear-gradient(90deg, #FDA198 0%, #CA4C91 100%);
+    border-radius: 11px;
+    padding:2px;
 }
+
+
+
+
 
 .control-container {
     display: flex; /* or inline-flex */
