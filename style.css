@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    background-color: #0C122C;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+.background{
+    background-image: url(./images/bg-desktop.png);
+    height: 555px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 1440px 400px;
+    padding-top:288px;
+  
+}
+
+.container {
+    
+    display: flex; /* or inline-flex */
+    justify-content: center;
+    gap: 30px;
+    
+    
+}
+
+.item {
+    order: 5; /* default is 0 */
+}
+
+.controls{
+    background: hsl(228, 56%, 26%);
+    border-radius: 11px 97px 11px 11px; 
+    padding: 40px;
+    width: 349px;
+}
+
+.storage-bar{
+    margin-top: 46px;
+    width: 540px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    padding-left: 39px;
+    padding-right: 39px;
+    background: hsl(228, 56%, 26%);
+    border-radius: 11px;
+    position: relative;
+}
+
+.storage-bar p{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+.progress-bar{
+    -webkit-appearance: none;
+   appearance: none;
+   margin-top:21px;
+   margin-bottom: 8px;
+   width: 100%;
+   height: 20px;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #151E49;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.progress-bar::-webkit-progress-value {
+    background: linear-gradient(90deg, #FDA198 0%, #CA4C91 100%);
+    border-radius: 10px;
+    padding:2px;
+}
+
+.progress-bar::-webkit-progress-value::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 100%;
+    right: 7px;
+    top: 7px;
+    background-color: white;
+}
+
+.control-container {
+    display: flex; /* or inline-flex */
+    gap: 16px;
+}
+
+.control-item {
+    margin-top: 31px;
+    order: 5; /* default is 0 */
+}
+
+.control-item:hover {
+    margin-top: 28px;
+    order: 5; /* default is 0 */
+}
+
+.control{
+    background-color: #0C122C;
+    width: 48px;
+    height: 48px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.control:hover{
+    background-color: #131b43;
+    width: 48px;
+    height: 48px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    
+}
+
+.progress-container {
+    display: flex; /* or inline-flex */
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.info-box{
+    background-color: #ffffff;
+    display: inline-block;
+    height: 72px;
+    
+    position: absolute;
+    width: 179px;
+    top:-36px;
+    right: 40px;
+    border-radius: 11px;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex-direction:column;
+}
+
+.info-box p{
+    color: hsla(229, 7%, 55%, 1);
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.bold-large{
+    color: hsla(229, 57%, 11%, 1);
+    font-size: 2em;
+}
+
+.triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 28px solid white;
+    border-left: 33px solid transparent;
+    position: absolute;
+    top:25px;
+    right: 40px;
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    .background{
+        background-image: url(./images/bg-mobile.png);
+        height: 555px;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 375px 667px;
+        padding-top:128px;
+      
+    }
+
+    .container {
+        
+        display: flex; /* or inline-flex */
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-left:13px;
+        margin-right:13px;
+    }
+
+    .controls{
+        background: #1E2D69;
+        border-radius: 11px 97px 11px 11px; 
+        padding: 40px;
+        width: 100%;
+    }
+
+    .storage-bar p{
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .info-box{
+        background-color: #ffffff;
+        display: inline-block;
+        height: 72px;
+        
+        position: absolute;
+        width: 179px;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 11px;
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        flex-direction:column;
+    }
+
+    .info-box p{
+        color: hsla(229, 7%, 55%, 1);
+        white-space: nowrap;
+        font-weight: 700;
+    }
+    
+    .bold-large{
+        color: hsla(229, 57%, 11%, 1);
+        font-size: 2em;
+    }
+
+    .triangle-topleft {
+        display: none;
+    }
+  }
